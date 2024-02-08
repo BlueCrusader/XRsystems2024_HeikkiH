@@ -1,0 +1,34 @@
+{
+    "name": "QuitKeyInput",
+    "maps": [
+        {
+            "name": "QuitAction",
+            "id": "bd938de7-02b0-4036-98db-77b40e67cfbd",
+            "actions": [
+                {
+                    "name": "QuitGame",
+                    "type": "Button",
+                    "id": "51277a20-56fc-4bee-9331-1a1ce09d0013",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "93fb007e-9177-49a8-b056-4563b25195b8",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QuitGame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
