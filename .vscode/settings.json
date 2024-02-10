@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "XRsystems2024.sln"
+    "dotnet.defaultSolution": "XRsystems2024_HeikkiH.sln"
 }
