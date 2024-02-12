@@ -41,6 +41,9 @@ public class GrabScript : MonoBehaviour
                 // Save the position and rotation at the end of Update function, so you can compare previous pos/rot to current here
                 grabbedObject.position = transform.position;
                 grabbedObject.rotation = transform.rotation;
+
+                //Testing
+                
             }
         }
         // If let go of button, release object

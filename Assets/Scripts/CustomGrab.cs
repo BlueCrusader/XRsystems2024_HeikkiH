@@ -12,6 +12,7 @@ public class CustomGrab : MonoBehaviour
     public Transform grabbedObject = null;
     public InputActionReference action;
     bool grabbing = false;
+    bool twoGrabbing = false;
 
     private void Start()
     {
@@ -38,8 +39,27 @@ public class CustomGrab : MonoBehaviour
             {
                 // Change these to add the delta position and rotation instead
                 // Save the position and rotation at the end of Update function, so you can compare previous pos/rot to current here
-                grabbedObject.position = transform.position;
-                grabbedObject.rotation = transform.rotation;
+                
+                //Testing
+                
+                twoGrabbing = otherHand.action.action.IsPressed();
+                if (twoGrabbing) {
+                    //this.transform.position = 0.5f*(object1.transform.position + object2.transform.position);
+                    grabbedObject.position = 0.5f*(transform.position + otherHand.transform.position);
+                    //transform.rotation = Quaternion.AngleAxis(angle, transform.up) * transform.rotation;
+                    
+                    //Quaternion otherHandQuat = 
+                    //grabbedObject.rotation = Quaternion.AngleAxis(0, otherHand.transform.up) * transform.rotation;
+                    grabbedObject.rotation = otherHand.transform.rotation * transform.rotation;
+                    //+90 x rotation needed
+                    grabbedObject.rotation *= Quaternion.Euler(90, 0, 0);
+
+                } else {
+                    grabbedObject.position = transform.position;
+                    grabbedObject.rotation = transform.rotation;
+                }
+                
+                //
             }
         }
         // If let go of button, release object
