@@ -34,10 +34,18 @@ public class LensCamDirection : MonoBehaviour
         // /*
         Vector3 lookPos = target.position - cameraTransform.position;
         Quaternion camRotation = Quaternion.LookRotation(lookPos, Vector3.up);
-        //target.SetPositionAndRotation(target.position, camRotation);
         target.rotation = camRotation;
         // */
-        
+        //target.SetPositionAndRotation(target.position, camRotation);
+
+        // 
+        /*
+        Vector3 lookPos = target.position - cameraTransform.position;
+        Quaternion targetRotation = Quaternion.FromToRotation(cameraTransform.transform.forward, lookPos);
+        target.transform.rotation = targetRotation;
+        // */
+
+
         // 
         /*
         Vector3 lookAway = target.position - cameraTransform.position;
