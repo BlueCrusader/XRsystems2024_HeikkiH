@@ -123,6 +123,26 @@ MonoBehaviour:
   priority: 0
   required: 0
   ignoreValidationErrors: 0
+--- !u!114 &-2912370452510364845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e314dfef9af0904e80129bcc0a79361, type: 3}
+  m_Name: HandTracking Standalone
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: Hand Tracking Subsystem
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.handtracking
+  openxrExtensionStrings: XR_EXT_hand_tracking
+  company: Unity
+  priority: -100
+  required: 0
 --- !u!114 &-1605970773658757576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,6 +175,26 @@ MonoBehaviour:
   Values:
   - {fileID: 1624315337336683823}
   - {fileID: -1605970773658757576}
+--- !u!114 &265221553072960286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3aced3429e5911458f4da2dac9d0f29, type: 3}
+  m_Name: MetaHandTrackingAim Standalone
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: Meta Hand Tracking Aim
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.metahandtrackingaim
+  openxrExtensionStrings: XR_FB_hand_tracking_aim
+  company: Unity
+  priority: 0
+  required: 0
 --- !u!114 &1427471973062425183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,9 +233,11 @@ MonoBehaviour:
   - {fileID: 3217231896670062798}
   - {fileID: 5832370228684650529}
   - {fileID: -4422313517873237462}
+  - {fileID: -2912370452510364845}
   - {fileID: 1427471973062425183}
   - {fileID: 2062951162920959093}
   - {fileID: 4149602507586426454}
+  - {fileID: 265221553072960286}
   - {fileID: 3822128807108567280}
   - {fileID: 5798720234460620218}
   - {fileID: 3450505236550525800}
